@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Parkinsan;
+    src: url(Parkinsans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Parkinsan;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frames{
+    display: flex ;
+}
+
+.frame span {
+    cursor: pointer;
+    font-size: 3vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: baseline;
+    /* background-color: red; */
+    height: 5vw;
+    padding: 0 5vw;
+    /* transform: translateY(-5vw); */
+
+
+}
+
+.frame {
+    z-index: 999;
+    overflow: hidden;
+    height: 5vw;
+    /* background-color: yellow; */
+}
+
+#circle {
+    pointer-events: none;
+    height: 3vw;
+    width: 3vw;
+    background-color: rgb(237, 6, 183);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
